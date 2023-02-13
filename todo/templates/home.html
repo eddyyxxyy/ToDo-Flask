@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}ToDo App{% endblock %}
+
+{% block navbar %}
+<ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/">App</a>
+    </li>
+    <li class="nav-item me-2">
+        <a class="nav-link" href="/meta">Meta</a>
+    </li>
+    <li class="nav-item">
+        <a class="btn btn-info bg-light" href="https://github.com/eddyyxxyy/ToDo-Flask" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="25" height="25"
+                style="border: 0; float: left; margin-right: 10px" />
+            <span>Source Code</span>
+        </a>
+    </li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-1" data-bs-theme="blue">
+    <h1 class="display-5 text-center">ToDo</h1>
+</div>
+
+{% endblock %}
