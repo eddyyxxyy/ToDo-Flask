@@ -7,8 +7,11 @@ Aplicação ToDo simples e direto ao ponto com Python e Flask.
 
 Este repositório tem como intuíto a prática e estudo das tecnologias utilizadas.
 
-> ### Insira Preview da Homepage.
-> ![Homepage]()
+> ### Aba Add da Homepage.
+> ![Homepage-Add](/previews/homepage-add.png)
+>
+> ### Página de contato e informações.
+> ![Homepage-Add](/previews/metapage.png)
 
 ## Ambiente de Desenvolvimento
 
@@ -16,7 +19,8 @@ Para a criação deste CRUD estou utilizando as seguintes tecnologias:
 
 - Python 3.11;
 - Flask 2.2.2;
-- Python DotEnv 0.21.1.
+- Flask-SQLAlchemy 3.0.3.
+- Python DotEnv 0.21.1;
 
 ## Licença
 
