@@ -7,6 +7,8 @@ Aplicação ToDo simples e direto ao ponto com Python e Flask.
 
 Este repositório tem como intuíto a prática e estudo das tecnologias utilizadas.
 
+## Previews
+
 > ### Aba Add da Homepage.
 > ![Homepage-Add](/previews/homepage-add.png)
 >
