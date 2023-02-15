@@ -9,11 +9,21 @@ Este repositório tem como intuíto a prática e estudo das tecnologias utilizad
 
 ## Previews
 
-> ### Aba Add da Homepage.
+>
+> ### Homepage:
+> ![Homepage-Empty](/previews/homepage-empty.png)
+>
+> ### Aba Add da Homepage:
 > ![Homepage-Add](/previews/homepage-add.png)
 >
-> ### Página de contato e informações.
-> ![Homepage-Add](/previews/metapage.png)
+> ### Homepage populado com tarefas:
+> ![Homepage-1-row](/previews/homepage-todos-example.png)
+>
+> ### Footer da Homepage:
+> ![Homepage-1-row](/previews/homepage-footer.png)
+>
+> ### Página de contato e informações:
+> ![Meta](/previews/metapage.png)
 
 ## Ambiente de Desenvolvimento
 
