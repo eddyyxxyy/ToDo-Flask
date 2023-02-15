@@ -1,0 +1,19 @@
+<form action="/add" method="post">
+    <div class="row fade show active bg-body-secondary m-0 border border-top-0 border-bottom-0 border-start-0 rounded-bottom"
+        id="nav-add-tasks" role="tabpanel" aria-labelledby="nav-add-tab">
+        <div>
+            <label for="title" class="form-label float-start mt-3 text-light-emphasis">Title: <small class="text-secondary">(max: 25 characters)</small></label>
+            <input type="text" name="title" class="form-control" id="title" placeholder="Wash the dishes...">
+        </div>
+        <div>
+            <label for="info" class="form-label float-start text-light-emphasis">Additional Info: <small class="text-secondary">(max: 500 characters)</small></label>
+            <textarea maxlength="350" name="additional_info" class="form-control" id="info" rows="5"
+                placeholder="Won't use the dishwasher, I'll clean it with my own hands!"></textarea>
+        </div>
+        <div class="mt-3">
+            <button type="submit" class="float-start btn btn-info">Add</button>
+            <br>
+            <br>
+        </div>
+    </div>
+</form>

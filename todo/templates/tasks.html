@@ -1,0 +1,41 @@
+<div class="row fade show active bg-body-secondary m-0 border border-top-0 border-bottom-0 border-start-0 rounded-bottom"
+    id="nav-tasks" role="tabpanel" aria-labelledby="nav-home-tab" style="display: flex;justify-content: center;">
+    {% if todo_list |length >0 %}
+    <div class="row gy-3 row-cols-3 row-cols-md-3 mb-3 mt-1 ms-1 me-1">
+        {% for todo in todo_list %}
+        <div class="col-sm mb-1em">
+            <div class="card h-100 shadow" style="text-align: center;flex-grow: 1;">
+                <div class="card-header">
+                    <h5 class="card-title mt-2">{{ todo.title }}</h5>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    {% if todo.complete %}
+                    <h6 class="card-subtitle mb-2 text-muted text-light-emphasis">Status: <b style="color: green;">Completed</b></h6>
+                    {% else %}
+                    <h6 class="card-subtitle mb-2 text-muted text-light-emphasis">Status: <b style="color: crimson;">to be completed</b></h6>
+                    {% endif %}
+                    <p class="card-text mt-auto mb-auto">{{ todo.additional_info }}</p>
+                    <div class="justify-content-between mt-2">
+                        <small style="color: grey;">Created in {{ todo.created.strftime('%m/%d/%Y') }}</small>
+                        {% if todo.modified != todo.created %}
+                            <small style="color: grey;"> |  Modified in {{ todo.modified.strftime('%m/%d/%Y') }}</small>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card-footer">
+                    {% if todo.complete %}
+                    <a href="/update/{{ todo.id }}" class="mt-auto mx-auto btn btn-block btn-outline-light float-start">Change to: Incomplete</a>
+                    {% else %}
+                    <a href="/update/{{ todo.id }}" class="mt-auto mx-auto btn btn-block btn-light float-start">Change to: Complete</a>
+                    {% endif %}
+                    <a href="/remove/{{ todo.id }}"
+                        class="mt-auto mx-auto btn btn-block btn-dark btn-outline float-end">Remove</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p class="mt-3 mb-3 text-center">Add tasks to list them here!</p>
+    {% endif %}
+</div>
